@@ -1,0 +1,200 @@
+body
+  font-family 'Roboto', sans-serif
+.btn-info
+  background-color #76ccdd
+  border-width 0
+  text-transform uppercase
+  font-family 'Montserrat', sans-serif
+
+h1, h2, h3, h4, h5, h6
+  font-family 'Playfair Display', serif
+  font-style italic
+
+.about-us
+  p
+    font-weight 300
+
+div.quote-wrap
+  position relative
+  font-family 'Playfair Display', serif
+  font-style italic
+  color #959699
+  font-size 2rem
+
+  &:before, &:after
+    content ''
+    background-repeat no-repeat
+    position absolute
+    background-position center
+    width 100%
+    height 40px
+    left 0
+    right 0
+
+  &:before
+    background-image url('/images/quote-top.png')
+    top -50px
+
+  &:after
+    background-image url('/images/quote-bottom.png')
+    bottom -50px
+.text-header-section
+  display flex
+  flex-direction column
+  span
+    line-height 1.1
+
+.VueCarousel-navigation
+  button
+    color #76ccdd !important
+
+.banner
+  .VueCarousel
+    height 100%
+    z-index 4
+    .VueCarousel-wrapper
+      height 100%
+      .VueCarousel-inner
+        height auto
+        .VueCarousel-slide
+          height auto
+    .VueCarousel-pagination
+      position absolute
+      bottom 5px
+      .VueCarousel-dot-container
+        .VueCarousel-dot
+          .VueCarousel-dot-button
+            background #cecece!important
+        .VueCarousel-dot--active
+          .VueCarousel-dot-button
+            background #949494!important
+    .VueCarousel-navigation
+      display none
+      .VueCarousel-navigation-button
+        top 44%!important
+      .VueCarousel-navigation-prev
+        left 50px!important
+      .VueCarousel-navigation-next
+        right 50px!important
+.feedback
+  .VueCarousel
+    .VueCarousel-navigation, .VueCarousel-pagination
+      display none!important
+
+.text-logo
+  color #76ccdd!important
+  font-size 36px
+  font-weight 300
+  font-family 'Roboto', sans-serif
+  font-style normal
+
+.color-primary
+  color #76ccdd!important
+
+.weight-600
+  font-weight 600
+
+.weight-300
+  font-weight 300
+
+.slide-service-footer
+  .VueCarousel
+    .VueCarousel-pagination, .VueCarousel-navigation
+      display none
+
+.date-container,
+  .time-container
+    .date-dropdown,
+    .time-dropdown
+      .btn
+        flex 1
+        display flex
+        align-items center
+        justify-content space-between
+        background-color #76ccdd
+        border 0
+        padding-top 10px
+        padding-bottom 10px
+        font-size 17px
+        font-family Montserrat
+        color #fff
+
+.booking-col-2
+  .form-control
+    padding-left 0
+    border 0
+    border-bottom 1px solid #000
+    border-radius 0
+
+input:focus
+  outline 0
+  box-shadow none !important
+  -webkit-box-shadow none !important
+  -moz-box-shadow none !important
+
+.btn:active
+  background-color #76ccdd !important
+  border-color #76ccdd !important
+
+.btn:focus
+  box-shadow none !important
+  -webkit-box-shadow none !important
+  -moz-box-shadow none !important
+
+.drop-form {
+  .dropdown-menu {
+    margin: -2.1rem 0 0
+    margin-left -1px
+    transform none !important;
+    top 33px !important;
+    left -15px !important;
+  }
+  .dropdown-toggle {
+    font-size 13px
+    padding-left 20px
+    padding-right 20px
+  }
+  .dropdown-toggle::after {
+    content none !important
+  }
+  .form-control {
+    border 0
+    outline 0
+    background transparent
+    border-bottom 1px solid #b7b7b7
+    border-radius: 0
+    font-size: 12px
+    margin-top: -8px
+    padding-left 0 !important
+    color #262626
+    font-weight 500
+  }
+  .form-control:focus {
+    border-color: #b7b7b7
+  }
+}
+@media (max-width: 576px) {
+  .drop-form {
+    .dropdown-toggle {
+      font-size 13px
+    }
+  }
+}
+
+.modal-enter-pass {
+  .form-control {
+    border 0
+    outline 0
+    background transparent
+    border-bottom 1px solid #b7b7b7
+    border-radius: 0
+    font-size: 15px
+    margin-top: -8px
+    padding-left 0 !important
+    color #262626
+    font-weight 500
+  }
+  .form-control:focus {
+    border-color: #b7b7b7
+  }
+}

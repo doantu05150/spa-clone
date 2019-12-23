@@ -1,0 +1,20 @@
+version: '3'
+services:
+  prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: eforea-website:prod
+    environment:
+      VIRTUAL_HOST: eforealifestyle.com, eforeaspa.vn, www.eforeaspa.vn, www.eforealifestyle.com
+      HTTPS_METHOD: noredirect # support both http and https
+      NODE_ENV: production
+    expose:
+      - 3000
+    volumes:
+      - .:/opt/app
+    restart: unless-stopped
+networks:
+  default:
+    external:
+      name: nginx-proxy
